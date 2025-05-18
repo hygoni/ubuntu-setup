@@ -14,5 +14,5 @@ sudo apt install -y \
 sudo systemctl enable libvirtd
 sudo systemctl start libvirtd
 
-sudo usermod -aG libvirt,kvm $orig_user
+sudo usermod -aG libvirt,kvm,libvirt-qemu $orig_user
 sudo -u $orig_user newgrp libvirt
