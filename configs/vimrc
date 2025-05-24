@@ -10,6 +10,7 @@ set ruler
 
 nnoremap <C-n> :cnext<CR>
 nnoremap <C-p> :cprevious<CR>
+nmap <F8> :TagbarToggle<CR>
 
 " A tab produces a 8-space indentation
 set tabstop=8
@@ -30,6 +31,7 @@ Plugin 'hygoni/quickr-cscope.vim'
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 Plugin 'tpope/vim-fugitive'
+Plugin 'preservim/tagbar'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
