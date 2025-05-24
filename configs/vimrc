@@ -7,9 +7,12 @@ set colorcolumn=80
 set number
 set ruler
 
+syntax on
 
 nnoremap <C-n> :cnext<CR>
 nnoremap <C-p> :cprevious<CR>
+nnoremap <C-q> :cclose<CR>
+nnoremap <C-o> :copen<CR>
 nmap <F8> :TagbarToggle<CR>
 
 " A tab produces a 8-space indentation
