@@ -77,10 +77,10 @@ read -rp "Really delete these kernels? [y/N] " ans
 for v in "${to_delete[@]}"; do
     echo "Removing $v …"
     rm -rf "/lib/modules/$v"
-    rm -f  "/boot/vmlinuz-$v" \
+    rm -vf  "/boot/vmlinuz-$v" \
            "/boot/System.map-$v" \
            "/boot/config-$v" \
-           "/boot/initrd-$v"* \
+           "/boot/initrd.img-$v"* \
            "/boot/initramfs-$v.img" 2>/dev/null || true
 done
 echo "Purged ${#to_delete[@]} kernel(s)."
